@@ -1,0 +1,16 @@
+{
+  "version": "independent",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "**/*.md",
+        "**/*.test.ts",
+        "**/*.e2e.ts",
+        "**/test/**"
+      ],
+      "conventionalCommits": true
+    }
+  }
+}

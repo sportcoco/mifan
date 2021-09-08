@@ -1,0 +1,31 @@
+{
+  "name": "@assits/mifan-preset-built-in",
+  "version": "0.0.1",
+  "description": "@assits/mifan-preset-built-in",
+  "main": "lib/index.js",
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "keywords": [
+    "mifan"
+  ],
+  "authors": [
+    "mifan"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@bomijs/babel-preset-bomi": "^1.2.7",
+    "@bomijs/utils": "^1.2.7",
+    "art-template": "^4.13.2",
+    "async": "^3.2.0",
+    "inquirer": "^6.3.1",
+    "lru-cache": "^5.1.1",
+    "metalsmith": "^2.1.0",
+    "minimatch": "^3.0.0",
+    "multimatch": "^2.1.0"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@assits/mifan-plugin-cli",
+  "version": "0.0.1",
+  "description": "@assits/mifan-plugin-cli",
+  "main": "lib/index.js",
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "keywords": [
+    "mifan"
+  ],
+  "authors": [
+    "mifan"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@assits/mifan-core": "0.0.1",
+    "@assits/mifan-preset-built-in": "0.0.1"
+  }
+}

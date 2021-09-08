@@ -1,0 +1,63 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "node ./scripts/bootstrap.js",
+    "build": "bro-build",
+    "release": "node ./scripts/release.js"
+  },
+  "main": "bin/mifan.js",
+  "keywords": [
+    "mifan"
+  ],
+  "author": "sport",
+  "license": "MIT",
+  "devDependencies": {
+    "@assits/bro-build": "^1.0.8",
+    "@bomijs/babel-preset-bomi": "^1.2.7",
+    "@bomijs/utils": "^1.2.7",
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "babel-eslint": "^10.1.0",
+    "commitizen": "^4.2.2",
+    "cz-lerna-changelog": "^2.0.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "escape-goat": "^3.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^7.15.1",
+    "lerna": "^3.22.1",
+    "lint-staged": "^10.5.4",
+    "new-github-release-url": "^1.0.0",
+    "open": "^7.0.4",
+    "prettier": "^2.3.2",
+    "yorkie": "^2.0.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown",
+    "*.{jsx,txs,ts,js,vue}": [
+      "eslint --fix"
+    ]
+  }
+}
