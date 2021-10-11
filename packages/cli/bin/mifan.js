@@ -23,6 +23,7 @@ program
   .option('-c, --clone', 'use git clone')
   .option('-r, --run', 'run the project')
   .option('--mock [value]', 'use mock data to generate project', commaSeparatedList)
+  .option('--download [value]', 'download the remote template')
   .action(async cmd => {
     validateArgsLen(process.argv.length, 7);
     require('../lib/init')(cmd);
