@@ -1,0 +1,22 @@
+{
+  "multi-side": {
+    "name": "多端（Web + 小程序 + 原生）",
+    "git": "https://github.com/sportcoco/template.git",
+    "download": "direct:https://github.com/sportcoco/template.git"
+  },
+  "d2-admin": {
+    "name": "后台管理(d2-admin)",
+    "git": "https://github.com/d2-projects/d2-admin.git",
+    "download": "direct:https://github.com/d2-projects/d2-admin.git"
+  },
+  "vue-element-admin": {
+    "name": "后台管理(vue-element-admin)",
+    "git": "https://github.com/PanJiaChen/vue-element-admin.git",
+    "download": "direct:https://github.com/PanJiaChen/vue-element-admin.git"
+  },
+  "ant-design-vue-pro": {
+    "name": "后台管理(ant-design-vue-pro)",
+    "git": "https://github.com/vueComponent/ant-design-vue-pro.git",
+    "download": "direct:https://github.com/vueComponent/ant-design-vue-pro.git"
+  }
+}

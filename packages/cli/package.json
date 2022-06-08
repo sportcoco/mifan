@@ -1,6 +1,6 @@
 {
   "name": "@assits/mifan-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "@assits/mifan-cli",
   "bin": {
     "mf": "bin/mifan.js"
